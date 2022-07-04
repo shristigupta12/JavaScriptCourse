@@ -7,3 +7,6 @@ console.log(answer);
 var x = 56.397253001;
 console.log(x);
 console.log(Math.round(x));
+// typeof
+console.log(typeof answer);
+console.log(typeof x);
