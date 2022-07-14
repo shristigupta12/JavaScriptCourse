@@ -22,3 +22,12 @@ User.prototype.getFirstName = function(){
     console.log(Sam);
 hitesh.getFirstName();
 Sam.getFirstName();
+
+// Object chain throught prototype methods
+if(hitesh.hasOwnProperty("firstName")){
+    hitesh.getFirstName();
+}
+if(hitesh.hasOwnProperty("firstNameee")){
+    hitesh.getFirstName();
+}
+
