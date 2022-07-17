@@ -44,3 +44,17 @@ btn.addEventListener("click", ()=>{
     courses.sort((a,b)=> a.price - b.price); //doubt
     generateList();
 })
+const btn2 = document.querySelector(".sort-btn2");
+btn2.addEventListener("click", ()=>{
+    courses.sort((a,b)=> {
+        if(a<b){
+            return -1;
+        }
+        if(a>b){
+            return 1;
+        }
+        return 0;
+    }
+    );
+    generateList();
+})
