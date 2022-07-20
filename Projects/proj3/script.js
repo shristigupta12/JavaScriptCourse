@@ -36,25 +36,15 @@ function generateList(){
     })
 }
 // generateList();
-window.addEventListener("load", generateList);   //doubt
-
+ window.addEventListener("load",generateList);
 //Sorting price
 const btn = document.querySelector(".sort-btn");
 btn.addEventListener("click", ()=>{
-    courses.sort((a,b)=> a.price - b.price); //doubt
+    courses.sort((a,b)=> a.price - b.price); 
     generateList();
 })
 const btn2 = document.querySelector(".sort-btn2");
 btn2.addEventListener("click", ()=>{
-    courses.sort((a,b)=> {
-        if(a<b){
-            return -1;
-        }
-        if(a>b){
-            return 1;
-        }
-        return 0;
-    }
-    );
+    courses.sort((a,b)=> b.price - a.price);
     generateList();
 })
